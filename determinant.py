@@ -55,7 +55,10 @@ def init_matrix(matrix, cofactor=1):
 
 def determinant_calculator(matrix):
     print("The result is:")
-    init_matrix(matrix)
-    while len(matrices) > 0:
-        retrieve_matrix()
-    print(determinant)
+    if len(matrix) == 1:
+        print(matrix[0][0])
+    else:
+        init_matrix(matrix)
+        while len(matrices) > 0:
+            retrieve_matrix()
+        print(determinant)
